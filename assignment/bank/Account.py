@@ -21,3 +21,6 @@ class Account:
             if amount <= 0:
                 raise InvalidAmountError("Invalid withdrawal amount\nTry withdrawing amount greater than 0.00Naira")
             self.balance -= amount
+
+    def balance(self):
+        pass

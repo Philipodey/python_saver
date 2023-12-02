@@ -1,7 +1,7 @@
 # from unittest import TestCase
 #
 #
-# class TestPalindrome(TestCase):
+# server_class TestPalindrome(TestCase):
 #     def is_palindrome(2344):
 
 

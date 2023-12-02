@@ -16,7 +16,8 @@ class Account:
             raise InvalidAmountError("Invalid deposit amount\nTry depositing a valid amount amount greater #0.00Naira")
         self.__balance += amount
 
-    def check_balance(self) -> float:
+    def check_balance(self, pin) -> float:
+        self._invalid_pin_exception(pin)
         return self.__balance
 
     def withdraw(self, pin: str, amount: float):

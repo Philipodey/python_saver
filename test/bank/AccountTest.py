@@ -57,8 +57,6 @@ class AccountTest(TestCase):
         with self.assertRaises(InvalidPinError):
             gtb.check_balance("1235")
 
-
-
     def test_withdraw_amount_greater_than_balance_raise_exception(self):
         gtb: Account = Account("1", "1234", "Odey Philip")
         gtb.deposit(1500.00)

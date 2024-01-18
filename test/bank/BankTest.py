@@ -28,7 +28,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual("2341", account.get_account_number())
 
     def test_find_account(self):
-        first_customer = self.first_bank.create_account_for("Philip", "Odey", "pin")
+        self.first_bank.create_account_for("Philip", "Odey", "pin")
         number = "2341"
         account: Account = Account(number, "pin", "Philip odey")
         account_number = self.first_bank.find_account(number)

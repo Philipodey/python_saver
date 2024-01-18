@@ -34,7 +34,7 @@ class Account:
         if amount <= 0:
             raise InvalidAmountError("Invalid withdrawal amount\nTry withdrawing amount greater than 0.00Naira")
 
-    def get_account_number(self):
+    def get_account_number(self) -> str:
         return self.__account_number
 
     def _insufficient_funds_exception(self, amount):

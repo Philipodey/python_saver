@@ -30,10 +30,10 @@ class MyTestCase(unittest.TestCase):
     def test_find_account(self):
         self.first_bank.create_account_for("Philip", "Odey", "pin")
         number = "2341"
-        account: Account = Account(number, "pin", "Philip odey")
+        account: Account = Account("2341", "pin", "Philip odey")
         account_number = self.first_bank.find_account(number)
-        print(account_number)
-        self.assertIs("2341", account.get_account_number())
+        # print(account_number)
+        self.assertEqual(number, account_number.get_account_number())
 
     def test_that_account_can_deposit(self):
         first_customer = self.first_bank.create_account_for("Philip", "Odey", "pin")

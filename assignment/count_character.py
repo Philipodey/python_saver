@@ -8,4 +8,4 @@ def count_character_in_list(word: str):
     return new_word
 
 
-print(count_character_in_list("semicolon.africa"))
+# print(count_character_in_list("semicolon.africa"))

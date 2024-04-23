@@ -34,8 +34,8 @@ class Bank:
         for account in self.list_of_accounts:
             if account_number == account.get_account_number():
                 return account
-            # else:
-            #     raise InvalidAccountNumberError("account does not exist!!!")
+            else:
+                raise InvalidAccountNumberError("account does not exist!!!")
 
     def check_balance(self, account_number: str, pin: str):
         find_account_number = self.find_account(account_number)
